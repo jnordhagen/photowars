@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "d1372a03-b84c-4e1c-882a-8368701d92ea",
+		"name": "APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26281262"
+	},
+	"item": [
+		{
+			"name": "/test",
+			"item": [
+				{
+					"name": "/test/kitten",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{ip}}:{{port}}/test/kitten",
+							"protocol": "http",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"test",
+								"kitten"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/swagger",
+			"item": [
+				{
+					"name": "/swagger",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{ip}}:{{port}}/swagger",
+							"protocol": "http",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"swagger"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/swagger/swagger.json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{ip}}:{{port}}/swagger/spec",
+							"protocol": "http",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"swagger",
+								"spec"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
